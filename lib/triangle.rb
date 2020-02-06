@@ -10,7 +10,7 @@ class Triangle
   def kind
     if @a > 0 && @b > 0 && @c > 0
       if (@a + @b) > @c && (@a + @c) > @b && (@b + @c) > @a
-        if ((@a == @b) && (@a == @c) && (@b == @c))
+        if (@a == @b) && (@a == @c) && (@b == @c)
           :equilateral
         elsif ((@a == @b) || (@a == @c) || (@b == @c))
           :isosceles
